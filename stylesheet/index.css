@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /* Navbar Styles*/
 .navbar-container {
     background-color: #d3d2da;
@@ -7,7 +12,7 @@
     left: 0; 
     right: 0; 
     z-index: 10;
-    padding: 1rem 0.5rem;
+    padding: 1rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,7 +147,7 @@
     align-items: center; 
     overflow: hidden;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
 }
 
  h1 {
@@ -350,6 +355,63 @@ img {
     }
 }
 
+/* About Me Section */
+.carousel-container {
+    border: 1px solid whitesmoke;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-slides {
+    display: flex;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    background-color: black;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 35%;
+    object-fit: contain;
+}
+
+.carousel-btn {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* media queries for carousel */
+@media (max-width: 768px) {
+    .carousel-container {
+    width: 100%;
+    height: 40vh;
+    }
+}
 
 /* Footer Styles*/
 .footer-container {
