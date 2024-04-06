@@ -37,17 +37,6 @@
     align-items: center;
 }
   
-@media screen and (min-width: 768px) {
-    .navbar-links.responsive {
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-  
-    .navbar-links.responsive div {
-      margin-right: 15px;
-    }
-}
-  
 .navbar-link {
     color: black;
     text-decoration: none;
@@ -119,6 +108,29 @@
     margin-right: 5px; 
 }
 
+/* media queries for Navbar */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+    .btn {
+        display: inline-block;
+        border-radius: 3px;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 0;
+        box-shadow: 4px 4px 8px #9e9ea4, 
+                    -4px -4px 8px white;
+        transition: box-shadow 0.3s ease;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #808080;
+    }
+    .btn i {
+        font-size: 20px; /* Set font size of the icon inside the button */
+    }
+}
+
 
 /* Main Styles*/
 .parent-cont {
@@ -170,7 +182,7 @@ img {
 .text-box {
     width: 700px; 
     height: 200px; 
-    overflow: auto; /* Add scrollbars if content overflows */
+    overflow: auto; 
     padding: 10px; 
 }
 .text-box p {
@@ -181,7 +193,7 @@ img {
 .curve {
     position: absolute;
     top: 10px;
-    left: -50px; /* Adjust the position of the curve */
+    left: -50px; 
     width: 30px; 
     height: 400px; 
     background-color: #F2994A; 
@@ -189,6 +201,42 @@ img {
     border-left: 2px solid black;
     border-radius: 50% 0 0% 50%;
     border: 2px solid #000;
+}
+
+/* media queries for Main Section */
+@media (max-width: 768px) {
+    .parent-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 150vh;
+
+    }
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-top: 100px;
+        position: relative;
+    }
+    .img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 500px;
+    }
+    
 }
 
 /* Contact Me Styles */
@@ -282,7 +330,26 @@ img {
     cursor: pointer;
     font-size: 20px;
 } */
-  
+
+/* media queries for contact me section */
+@media (max-width: 768px) {
+    .container {
+        width: 100vw;
+    }
+    .input, 
+    .textarea {
+        width: 300px;
+        height: 35px;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .title {
+        font-size: 2rem;
+    }
+}
+
 
 /* Footer Styles*/
 .footer-container {
@@ -419,6 +486,18 @@ a {
     font-size: 40px;
 }
 
+/* media queries for footer*/
+@media (max-width: 768px) {
+    .footer-container {
+        height: 150vh;
+    }
+    .controls {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 /* Scrollbutton styles */
 #scrollToTopButton {
@@ -440,4 +519,12 @@ a {
 
 #scrollToTopButton span {
     position: relative;
+}
+
+@media (max-width: 768px) {
+    #scrollToTopButton {
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    }
 }
