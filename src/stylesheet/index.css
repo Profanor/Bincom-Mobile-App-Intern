@@ -1,0 +1,294 @@
+.navbar-container {
+    background-color: #d3d2da;
+    border-bottom: 1px solid whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0; 
+    z-index: 10;
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo-text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0.5rem;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 60px;
+    margin: 0 auto;
+    align-items: center; 
+}
+
+.navbar-links.responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+@media screen and (min-width: 768px) {
+    .navbar-links.responsive {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  
+    .navbar-links.responsive div {
+      margin-right: 15px;
+    }
+}
+  
+.navbar-link {
+    color: black;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #d3d2da;
+    border-radius: 10px;
+    border: 1px black;
+    padding: 10px 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px #9e9ea4, 
+                -4px -4px 8px white;
+    transition: box-shadow 0.3s ease;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #808080;
+    /* margin-right: 20px; */
+}
+
+.btn:hover {
+    box-shadow: 3px 3px 5px #9e9ea4, 
+                -3px -3px 5px white;
+  }
+
+.logo-btn {
+    background-color: #d3d2da;
+    border-radius: 10px;
+    border: 1px black;
+    padding: 10px 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #9e9ea4, 
+                -3px -3px 5px white;
+    transition: box-shadow 0.3s ease;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #808080;
+  }
+
+.navbar-link.active {
+    color: orange;
+}
+
+.neomorphic-link {
+    display: inline-block;
+    margin-right: 10px; 
+    border-radius: 3px; 
+    padding: 10px; 
+    box-shadow: 4px 4px 8px #9e9ea4, 
+                -4px -4px 8px white;
+    transition: box-shadow 0.3s ease;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #808080;
+}
+  
+.neomorphic-link:hover {
+    box-shadow: 3px 3px 5px #9e9ea4, 
+                -3px -3px 5px white;
+}
+  
+.neomorphic-link.active {
+    box-shadow: 2px 2px 4px #d9d9d9, -2px -2px 4px #ffffff; 
+}
+  
+.material-icons {
+    vertical-align: middle; 
+    margin-right: 5px; 
+}
+
+.parent-cont {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden;
+    width: 100vw;
+    height: 80vh;
+}
+
+ h1 {
+    font-family: sans-serif;
+    text-align: center;
+}
+.hi {
+    color: #F2994A;
+}
+@keyframes typing {
+    0% {
+        width: 0;
+        margin-left: 1%; /* Start typing from the middle */
+    }
+    100% {
+        width: 100%;
+        margin-left: 0; /* Move cursor to the end */
+    }
+}
+.typewriter {
+    overflow: hidden; /* Ensures text is not visible until animated */
+    border-right: .15em solid white; /* Blinking cursor */
+    white-space: nowrap; /* Keeps text on a single line */
+    animation: typing 3s steps(20) forwards;
+}
+
+
+/* Footer Styles*/
+.footer-container {
+    background-color: #d3d2da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+.one {
+    background-color: #d3d2da;
+    border-radius: 5px;
+    border: 1px black;
+    color: black;
+    cursor: pointer;
+    height: 200px;
+    box-shadow: 4px 4px 8px #9e9ea4, 
+                -4px -4px 8px white;
+    transition: box-shadow 0.3s ease;
+    border-width: 1px;
+    margin-top: 40px;
+    margin-right: 30px;
+    width: 250px;
+}
+.one:hover {
+    box-shadow: 3px 3px 5px #9e9ea4, 
+                -3px -3px 5px white;
+  }
+.two {
+    background-color: #d3d2da;
+    border-radius: 5px;
+    border: 1px black;
+    color: black;
+    cursor: pointer;
+    height: 200px;
+    box-shadow: 4px 4px 8px #9e9ea4, 
+                -4px -4px 8px white;
+    transition: box-shadow 0.3s ease;
+    border-width: 1px;
+    margin-top: 40px;
+    margin-right: 20px;
+    width: 250px;
+}
+.two:hover {
+    box-shadow: 3px 3px 5px #9e9ea4, 
+                -3px -3px 5px white;
+  }
+.three {
+    background-color: #d3d2da;
+    border-radius: 5px;
+    border: 1px black;
+    color: black;
+    cursor: pointer;
+    height: 200px;
+    box-shadow: 4px 4px 8px #9e9ea4, 
+                -4px -4px 8px white;
+    transition: box-shadow 0.3s ease;
+    border-width: 1px;
+    margin-top: 40px;
+    margin-right: 20px;
+    width: 250px;
+}
+.three:hover {
+    box-shadow: 3px 3px 5px #9e9ea4, 
+                -3px -3px 5px white;
+  }
+.four {
+    background-color: #d3d2da;
+    border-radius: 5px;
+    border: 1px black;
+    color: black;
+    cursor: pointer;
+    height: 200px;
+    box-shadow: 4px 4px 8px #9e9ea4, 
+                -4px -4px 8px white;
+    transition: box-shadow 0.3s ease;
+    border-width: 1px;
+    margin-top: 40px;
+    margin-right: 20px;
+    width: 250px;
+}
+.four:hover {
+    box-shadow: 3px 3px 5px #9e9ea4, 
+                -3px -3px 5px white;
+  }
+.rounded {
+    background-color: #d3d2da;
+    border-radius: 50%;
+    border: 1px black;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    box-shadow: 4px 4px 8px #9e9ea4, 
+                -4px -4px 8px white;
+    transition: box-shadow 0.3s ease;
+    border-width: 1px;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 80px;
+}
+.rounded:hover {
+    box-shadow: inset 4px 4px 8px #9e9ea4, 
+               inset -4px -4px 8px white;
+    transition: box-shadow 0.3s ease;
+}
+.label {
+    font-weight: 900;
+    font-family: sans-serif;
+    text-align: center;
+}
+.controls {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.icon {
+    color: black; 
+    font-size: 40px;
+}
