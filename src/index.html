@@ -44,16 +44,75 @@
         </div>
         
         <div>
-            <a href="/contact" class="btn navbar-link" id="contact">
+            <a href="#contact" class="btn navbar-link">
                 Let's Talk
             </a>
         </div>
     </nav>
-    
+
+    <!--About Me Section-->
     <div class="parent-cont">
-        <h1 id="typewriter"><span class='hi'>Hi</span>, I am David Arinze</h1>
+        <div class="image-container">
+            <img src="/assets/images/Davids Photo.JPG" alt="david's photo">
+            <div class="curve"></div>
+        </div>
+            <div class="text-box">
+                <h1 id="typewriter"><span class='hi'>Hi</span>, I am David Arinze</h1>
+                <p>I'm a Nigerian based software engineer and frontend developer, with a passion for problem solving, 
+                    and a devotion to crafting visually appealing designs, making robust applications and sharing my knowledge and insights on Programming.
+                </p>
+            </div>
     </div>
 
+    <!--Contact Me Section-->
+    <div id='contact' class='container'>
+        <div class='content'>
+            <h1 class='title'>Contact Me</h1>
+            <form class='form' action='/users/contact' method='post'>
+                <div class='form-group'>
+                    <label class='label' for='fullName'>Full Name</label>
+                    <input
+                        class='input'
+                        type='text'
+                        id='fullName'
+                        name='fullName'
+                        value=''
+                        placeholder=' Your Name'
+                    />
+                </div>
+                <div class='form-group'>
+                    <label class='label' for='email'>Email Address</label>
+                    <input
+                        class='input'
+                        type='email'
+                        id='email'
+                        name='email'
+                        value=''
+                        placeholder=' Your Email address'
+                    />
+                </div>
+                <div class='form-group'>
+                    <label class='label' for='message'>Message</label>
+                    <textarea
+                        class='textarea'
+                        id='message'
+                        name='message'
+                        value=''
+                        placeholder=' Your Message'
+                    ></textarea>
+                </div>
+                <button class='button' type='submit'>Submit</button>
+            </form>
+        </div>
+        <!-- <div class='modal'>
+            <div class='modal-content'>
+                <span class='close'>&times;</span>
+                <p>Your response was sent successfully!</p>
+            </div>
+        </div> -->
+    </div>
+    
+    <!--Footer Section-->
     <footer class='footer-container'>
         <div class='flex'>
             <div class='controls'>
@@ -92,7 +151,9 @@
             </div>
         </div>
     </footer>
-    
+        <button id="scrollToTopButton">
+            <span>&lt;</span>
+        </button>
 
     <script src="/src/script/index.js"></script>
 </body>
