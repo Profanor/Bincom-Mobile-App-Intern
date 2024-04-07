@@ -6,7 +6,6 @@ body {
 /* Navbar Styles*/
 .navbar-container {
     background-color: #d3d2da;
-    border-bottom: 1px solid whitesmoke;
     position: fixed;
     top: 0;
     left: 0; 
@@ -192,7 +191,6 @@ body {
 /* Main Styles*/
 .parent-cont {
     background-color: black;
-    border: 1px solid white;
     color: white;
     display: flex;
     justify-content: center;
@@ -293,7 +291,6 @@ img {
         width: 300px;
         height: 500px;
     }
-    
 }
 
 /* Contact Me Styles */
@@ -409,7 +406,7 @@ img {
 
 /* About Me Section */
 .carousel-container {
-    border: 1px solid whitesmoke;
+    /* border: 1px solid whitesmoke; */
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -595,7 +592,7 @@ img {
     }  
     .skills-container h1 {
         font-size: 25px;
-        top: 0;
+        top: 15px;
     }  
 }
 
@@ -858,9 +855,6 @@ a {
         justify-content: center;
         align-items: center;
         margin-left: 25px;
-    }
-    .footer-text {
-        display: none;
     }
 }
 
