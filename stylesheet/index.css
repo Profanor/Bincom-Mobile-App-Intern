@@ -494,6 +494,14 @@ img {
     align-items: center;
     height: 100vh;
     width: 100vw;
+    position: relative;
+}
+.skills-container h1 {
+    position: absolute; 
+    top: 100px; /* Align it to the top of the container */
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1;
 }
 .controls1 {
     display: flex;
@@ -578,7 +586,11 @@ img {
         grid-gap: 10px;
         justify-content: center;
         align-items: center;
-    }    
+    }  
+    .skills-container h1 {
+        font-size: 25px;
+        top: 0;
+    }  
 }
 
 
@@ -590,7 +602,20 @@ img {
     align-items: center;
     height: 50vh;
     width: 100vw;
+    position: relative;
 }
+
+.footer-text {
+    color: #df9126;
+    font-family: sans-serif;
+    font-weight: 200;
+    position: absolute; 
+    top: 40px; 
+    right: 63%; 
+    transform: translateX(-50%); 
+    z-index: 1;
+}
+
 .flex {
     display: flex;
     flex-wrap: nowrap;
@@ -743,6 +768,13 @@ a {
 @media (max-width: 768px) {
     .footer-container {
         height: 150vh;
+        position: relative;
+    }
+    .footer-text {
+        position: absolute;
+        right: 1%;
+        top: 10px;
+
     }
     .controls {
         display: flex;
