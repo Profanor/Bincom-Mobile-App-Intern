@@ -509,7 +509,12 @@ img {
     margin-bottom: 150px;
 }
 
-.html, .css, .javascript, .nodejs, .express, .mongodb {
+.html, 
+.css, 
+.javascript, 
+.nodejs, 
+.express, 
+.mongodb {
     background-color: #d3d2da;
     border-radius: 5px;
     border: 1px black;
@@ -593,6 +598,123 @@ img {
     }  
 }
 
+/* Portfolio Styles */
+.portfolio-container {
+    background-color: #d3d2da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.portfolio-container h1 {
+    position: absolute; 
+    top: 70px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1;
+}
+.controls2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.image-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 200px; 
+    width: 300px; 
+    overflow: hidden; 
+}
+
+.image-holder img {
+    border-radius: 10px;
+    width: 270px; 
+    height: 170px; 
+}
+
+.project1 .pg {
+    font-family: sans-serif;
+    font-weight: 200;
+    margin-left: 13px;
+    text-align: left;
+}
+
+.project2 .pg {
+    font-family: sans-serif;
+    font-weight: 200;
+    margin-left: 13px;
+    text-align: left;
+}
+.project3 .pg {
+    font-family: sans-serif;
+    font-weight: 200;
+    margin-left: 13px;
+    text-align: left;
+}
+.project4 .pg {
+    font-family: sans-serif;
+    font-weight: 200;
+    margin-left: 13px;
+    text-align: left;
+}
+.project5 .pg {
+    font-family: sans-serif;
+    font-weight: 200;
+    margin-left: 13px;
+    text-align: left;
+}
+.project6 .pg {
+    font-family: sans-serif;
+    font-weight: 200;
+    margin-left: 13px;
+    text-align: left;
+}
+
+.project1,
+.project2,
+.project3,
+.project4,
+.project5,
+.project6 {
+    background-color: #d3d2da;
+    border-radius: 5px;
+    border: 1px black;
+    color: black;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px #9e9ea4, 
+                -4px -4px 8px white;
+    transition: box-shadow 0.3s ease;
+    border-width: 1px;
+    margin-top: 80px;
+    margin-right: 30px;
+    height: 250px;
+    width: 300px;
+}
+
+/* Media queries for portfolio Styles */
+@media (max-width: 768px) {
+    .portfolio-container {
+    height: 300vh;
+    width: 100vw;
+    }
+    .controls2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .portfolio-container h1 {
+        position: absolute; 
+        top: 65px; 
+    }
+}
+
 
 /* Footer Styles*/
 .footer-container {
@@ -628,7 +750,10 @@ img {
     flex-direction: row;
     margin-bottom: 35px;
 }
-.one {
+.one,
+.two,
+.three,
+.four {
     background-color: #d3d2da;
     border-radius: 5px;
     border: 1px black;
@@ -647,63 +772,19 @@ img {
     box-shadow: 3px 3px 5px #9e9ea4, 
                 -3px -3px 5px white;
   }
-.two {
-    background-color: #d3d2da;
-    border-radius: 5px;
-    border: 1px black;
-    color: black;
-    cursor: pointer;
-    height: 200px;
-    box-shadow: 4px 4px 8px #9e9ea4, 
-                -4px -4px 8px white;
-    transition: box-shadow 0.3s ease;
-    border-width: 1px;
-    margin-top: 40px;
-    margin-right: 20px;
-    width: 250px;
-}
 .two:hover {
     box-shadow: 3px 3px 5px #9e9ea4, 
                 -3px -3px 5px white;
   }
-.three {
-    background-color: #d3d2da;
-    border-radius: 5px;
-    border: 1px black;
-    color: black;
-    cursor: pointer;
-    height: 200px;
-    box-shadow: 4px 4px 8px #9e9ea4, 
-                -4px -4px 8px white;
-    transition: box-shadow 0.3s ease;
-    border-width: 1px;
-    margin-top: 40px;
-    margin-right: 20px;
-    width: 250px;
-}
 .three:hover {
     box-shadow: 3px 3px 5px #9e9ea4, 
                 -3px -3px 5px white;
   }
-.four {
-    background-color: #d3d2da;
-    border-radius: 5px;
-    border: 1px black;
-    color: black;
-    cursor: pointer;
-    height: 200px;
-    box-shadow: 4px 4px 8px #9e9ea4, 
-                -4px -4px 8px white;
-    transition: box-shadow 0.3s ease;
-    border-width: 1px;
-    margin-top: 40px;
-    margin-right: 20px;
-    width: 250px;
-}
 .four:hover {
     box-shadow: 3px 3px 5px #9e9ea4, 
                 -3px -3px 5px white;
   }
+
 .rounded {
     background-color: #d3d2da;
     border-radius: 50%;
