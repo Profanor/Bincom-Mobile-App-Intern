@@ -68,3 +68,13 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('nextBtn').addEventListener('click', nextSlide);
     document.getElementById('prevBtn').addEventListener('click', prevSlide);
 });
+
+// Get the button and the additional links container
+const additionalLinksBtn = document.getElementById("additionalLinksBtn");
+const additionalLinksContainer = document.getElementById("additionalLinksContainer");
+
+// Add event listener to the button
+additionalLinksBtn.addEventListener("click", function() {
+    // Toggle the visibility of the additional links container
+    additionalLinksContainer.classList.toggle("show");
+});

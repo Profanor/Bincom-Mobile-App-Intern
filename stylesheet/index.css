@@ -113,10 +113,41 @@ body {
     margin-right: 5px; 
 }
 
+.btn2 {
+    display: none;
+}
+
+/* Styles for the additional links container */
+.additional-links-container {
+    display: none;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 300px;
+    background-color:#d3d2da; 
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #808080;
+    text-align: center;
+    z-index: 999;
+}
+
+.additional-links-container.show {
+    display: none;
+}
+
+.fa-circle {
+    color: #df9126;
+}
+
 /* media queries for Navbar */
 @media (max-width: 768px) {
     .navbar-links {
         display: none;
+    }
+    .additional-links-container {
+        display: block;
     }
     .btn {
         display: inline-block;
@@ -130,10 +161,30 @@ body {
         border-width: 1px;
         border-style: solid;
         border-color: #808080;
+        margin-left: 170px;
     }
     .btn i {
         font-size: 20px; /* Set font size of the icon inside the button */
     }
+    .btn2 {
+        display: inline-block;
+        border-radius: 3px;
+        padding: 10px;
+        cursor: pointer;
+        box-shadow: 4px 4px 8px #9e9ea4, 
+                    -4px -4px 8px white;
+        transition: box-shadow 0.3s ease;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #808080;
+    }
+    .btn2 i {
+        font-size: 20px; 
+    }
+    .btn2:hover {
+        box-shadow: 3px 3px 5px #9e9ea4, 
+                    -3px -3px 5px white;
+      }
 }
 
 
@@ -570,7 +621,7 @@ a {
     margin: 10px;
 }
 
-/* media queries for footer*/
+/* media queries for footer */
 @media (max-width: 768px) {
     .footer-container {
         height: 150vh;
